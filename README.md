@@ -14,19 +14,23 @@ I'm limiting myself to two resources: git and GitHub Pages.  My high level goals
 Here's the current plan I'm working on to accomplish that:
 
 1.  Set up the "container site"
-  1.  Create a personal repo that GH will publish: spinosa.github.io
-  2.  Use the GHPages site generator to get a basic up and running for spinosa.github.io
-  3.  Set up a custom domain (later)
+  - [x] Create a personal repo that GH will publish: spinosa.github.io
+  - [x] Use the GHPages site generator to get a basic up and running for spinosa.github.io
+  - [x] Set up a custom domain (later)
  
 2.  Create my first "post repository"
-  1.  Create a standard repo with some code, README.md and LICENSE
-  2.  Manually create `gh-pages` branch in that repo with a single file: index.html
-  3.  This file will become the blog post...
+  1. [x]  Create a standard repo with some code, README.md and LICENSE
+  2. [x]  Manually create `gh-pages` branch in that repo with a single file: index.html
+  3. [x]  This file will become the blog post...
 
 3.  Publish that post
   1.  Add the "post repository" as a submodule of the "container site"...
   2.  The submodule needs to track the `gh-pages` branch
   3.  The submodule needs to be added at the root of spinosa.github.io in a directory called `blog-post-name`
+  *  ** Seems this is only necessary if I want to rename the post.**  
+  *  If I'm okay with the repository name being the blog post name, then I'm all done!
+  *  NB: Still looking into formatting and jekly stuff like that, so we'll see
+  *  Also need to try the submodule thing, see if that works for renaming...
 
 What did we just do?
 -----------------
