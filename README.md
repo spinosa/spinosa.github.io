@@ -8,34 +8,38 @@ Blogging about Code
 =================
 
 I'm limiting myself to two resources: git and GitHub Pages.  My high level goals are:
-1.  A simple "container site" hosted at spinosa.github.io (to move to custom domian thecodeistheblog.com eventually)
+1.  A simple "container site" hosted at [spinosa.github.io] (to move to custom domian [thecodeistheblog.com] eventually)
 2.  Each "post" on that site is actually it's own repository
 
 Here's the current plan I'm working on to accomplish that:
 
-1.  Set up the "container site"
-  - [x] Create a personal repo that GH will publish: spinosa.github.io
-  - [x] Use the GHPages site generator to get a basic up and running for spinosa.github.io
+1. [x] Set up the "container site"
+  - [x] Create a personal repo that GH will publish: [spinosa.github.io]
+  - [x] Use the GHPages site generator to get a basic up and running for [spinosa.github.io]
   - [x] Set up a custom domain (later)
  
-2.  Create my first "post repository"
+2. [x] Create my first "post repository"
   1. [x]  Create a standard repo with some code, README.md and LICENSE
   2. [x]  Manually create `gh-pages` branch in that repo with a single file: index.html
   3. [x]  This file will become the blog post...
 
-3.  Publish that post
-  1.  Add the "post repository" as a submodule of the "container site"...
-  2.  The submodule needs to track the `gh-pages` branch
-  3.  The submodule needs to be added at the root of spinosa.github.io in a directory called `blog-post-name`
-  *  ** Seems this is only necessary if I want to rename the post.**  
-  *  If I'm okay with the repository name being the blog post name, then I'm all done!
-  *  NB: Still looking into formatting and jekly stuff like that, so we'll see
-  *  Also need to try the submodule thing, see if that works for renaming...
+3. [x]  Publish that post
+  1.  There are two ways to publish...
+    1.  It's already published!
+      *  The `gh-pages` branch above with the `index.html` file is available at [http://<username>.github.io/normal-repo-name]
+    2.  Customize the post name...
+      1.  Add the "post repository" as a submodule of the "container site"...
+        *  `git submodule add -b gh-pages https://github.com/<username>/<normal-repo-name> <blog-post-name>`
+        *  You file will now _also_ be available at [http://<username>.github.io/<blog-post-name>]
 
-What did we just do?
+
+We did it!
 -----------------
-*  Publishing as outlined above will create "/blog-post-name/index.html" in the spinosa.github.io repository
-*  Jekyll (the engine processing GHPages) will make that available as "http://spinosa.github.io/blog-post-name"
+What's Left?
+-----------------
+1.  Get a nice jekyll template working on the container site
+2.  Get that template working for the post repository
+3.  Probably more stuff, but I gotta bounce right now... getting yelled at...
 
 
 What's next?
