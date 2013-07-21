@@ -1,4 +1,4 @@
-the_code_isthe_blog_
+the_code_is_the_blog
 =================
 
 What's going on here?  Welp, I'm trying to create a nice way to blog where the primary focus of the blogging is code.  Including code with tumblr kinda sucks.  But GitHub Pages has a strong focus on code....
