@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting Closer to my goal Code Blogging"
+title: "Getting Closer to my goal: Code Blogging"
 ---
 
 # Code Bogging... I'm Almost There
