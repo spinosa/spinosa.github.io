@@ -20,6 +20,16 @@
 
 
         <p class="view"><a href="https://github.com/spinosa">View My GitHub Profile</a></p>
+        
+        The posts...
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+          
 
       </header>
       <section>
